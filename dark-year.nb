@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[   2304131,      41232]
-NotebookOptionsPosition[   2299633,      41112]
-NotebookOutlinePosition[   2300014,      41129]
-CellTagsIndexPosition[   2299971,      41126]
+NotebookDataLength[   2309668,      41358]
+NotebookOptionsPosition[   2304872,      41231]
+NotebookOutlinePosition[   2305253,      41248]
+CellTagsIndexPosition[   2305210,      41245]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -182,7 +182,7 @@ Cell[BoxData[{
    3.62974778121702*^9, 3.6297477817299356`*^9}, {3.639321750619748*^9, 
    3.639321751737391*^9}, {3.6409524342797747`*^9, 3.640952439539391*^9}, {
    3.642802227193804*^9, 3.642802241232092*^9}, 3.6844961687555323`*^9}]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -199,7 +199,7 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"startype", "=", "\"\<HWD\>\""}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"nexamples", "=", "256"}], 
+  RowBox[{"nexamples", "=", "16"}], 
   RowBox[{"(*", "1", "*)"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"ars", "=", 
@@ -2797,7 +2797,8 @@ Cell[BoxData[{
    3.683994441309743*^9, 3.6839944414160433`*^9}, {3.6839965289922237`*^9, 
    3.683996538862915*^9}, 3.6839965940447893`*^9, {3.6839966275003643`*^9, 
    3.683996640199888*^9}, {3.683998672876264*^9, 3.683998673177184*^9}, {
-   3.6844962112474003`*^9, 3.6844962322006407`*^9}}]
+   3.6844962112474003`*^9, 3.6844962322006407`*^9}, {3.684500408353362*^9, 
+   3.684500408510528*^9}}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2811,32 +2812,19 @@ any dumps with the same suffix.\
    3.68449669004659*^9}],
 
 Cell[BoxData[
- RowBox[{"DumpSave", "[", 
-  RowBox[{
+ RowBox[{
+  RowBox[{"DumpSave", "[", 
    RowBox[{
-   "nd", "<>", "\"\<dark-year\>\"", "<>", "fsuffix", "<>", "\"\<.mx\>\""}], 
-   ",", "\"\<Global`\>\""}], "]"}]], "Input",
+    RowBox[{
+    "nd", "<>", "\"\<dark-year\>\"", "<>", "fsuffix", "<>", "\"\<.mx\>\""}], 
+    ",", "\"\<Global`\>\""}], "]"}], ";"}]], "Input",
  CellGroupingRules->{"GroupTogetherGrouping", 10002.},
  CellChangeTimes->{{3.629747731968607*^9, 3.62974776699111*^9}, {
    3.638278949153528*^9, 3.638278949736762*^9}, {3.638567557898217*^9, 
    3.638567558141891*^9}, {3.6387265460549097`*^9, 3.638726546282831*^9}, {
-   3.638726773691969*^9, 3.638726784521228*^9}, 3.684496522548669*^9}],
-
-Cell[BoxData[
- RowBox[{"{", "\<\"Global`\"\>", "}"}]], "Output",
- CellGroupingRules->{"GroupTogetherGrouping", 10002.},
- CellChangeTimes->{3.6297478001693077`*^9, 3.638278954140554*^9, 
-  3.63835487495809*^9, 3.638572879404961*^9, 3.638633710804968*^9, 
-  3.638651768776963*^9, 3.638678085555702*^9, 3.638726547105859*^9, 
-  3.6387268781982403`*^9, 3.638786512623452*^9, 3.638789761321198*^9, 
-  3.638808376975466*^9, 3.638811928469756*^9, 3.638815341140685*^9, 
-  3.638820676752253*^9, 3.638823404752737*^9, 3.638824197383461*^9, 
-  3.638842948247159*^9, 3.639055754463541*^9, 3.639126708221345*^9, 
-  3.639147156234891*^9, 3.639222692897142*^9, 3.640973914529893*^9, 
-  3.640973998369638*^9, 3.641294597724321*^9, 3.6428673526613617`*^9, 
-  3.683993432811627*^9, 3.683994751555601*^9, 3.683998550198824*^9, 
-  3.684000543727673*^9, 3.684496522548727*^9}]
-}, Closed]],
+   3.638726773691969*^9, 3.638726784521228*^9}, 3.684496522548669*^9, 
+   3.684500603440831*^9}]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -3679,9 +3667,8 @@ Cell[BoxData[
    "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"Get", "[", 
-     RowBox[{
-      RowBox[{"NotebookDirectory", "[", "]"}], "<>", 
-      "\"\<CustomTicks.m\>\""}], "]"}], ";"}], "\[IndentingNewLine]", 
+     RowBox[{"nd", "<>", "\"\<CustomTicks.m\>\""}], "]"}], ";"}], 
+   "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"hexToRGB", "=", 
      RowBox[{
@@ -4109,24 +4096,25 @@ Cell[BoxData[
         SuperscriptBox["qs", 
          RowBox[{"1", "/", "9"}]]}], 
        SuperscriptBox["\[Beta]s", 
-        RowBox[{"2", "/", "3"}]]]}]}], ";", 
-    RowBox[{"(*", 
-     RowBox[{
-      RowBox[{"2", "\[Pi]", " ", "qs", 
-       SqrtBox[
-        FractionBox[
-         SuperscriptBox[
-          RowBox[{"(", 
-           FractionBox[
-            RowBox[{"rss", "/", "\[Beta]s"}], 
+        RowBox[{"2", "/", "3"}]]]}]}], ";"}], 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{"2", "\[Pi]", " ", "qs", 
+      SqrtBox[
+       FractionBox[
+        SuperscriptBox[
+         RowBox[{"(", 
+          FractionBox[
+           RowBox[{"rss", "/", "\[Beta]s"}], 
+           RowBox[{
             RowBox[{
-             RowBox[{
-              RowBox[{"Max", "[", 
-               RowBox[{"#", ",", "1"}], "]"}], "&"}], "/@", "\[Beta]s"}]], 
-           ")"}], "3"], 
-         RowBox[{"G", " ", "mhs"}]]], 
-       SuperscriptBox["qs", 
-        RowBox[{"1", "/", "3"}]]}], ";"}], "*)"}], "\[IndentingNewLine]", 
+             RowBox[{"Max", "[", 
+              RowBox[{"#", ",", "1"}], "]"}], "&"}], "/@", "\[Beta]s"}]], 
+          ")"}], "3"], 
+        RowBox[{"G", " ", "mhs"}]]], 
+      SuperscriptBox["qs", 
+       RowBox[{"1", "/", "3"}]]}], ";"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{"circtime", "=", 
      RowBox[{
       RowBox[{
@@ -4299,8 +4287,139 @@ Cell[BoxData[
    3.683996450114854*^9, 3.683996476671528*^9}, {3.6839986110807543`*^9, 
    3.683998627956832*^9}, {3.68400061396803*^9, 3.684000620516424*^9}, 
    3.684496833775359*^9, {3.6844968838596573`*^9, 3.6844969741892757`*^9}, 
-   3.684497042209807*^9, {3.684497082984425*^9, 3.684497095805183*^9}}]
+   3.684497042209807*^9, {3.684497082984425*^9, 3.684497095805183*^9}, {
+   3.684500714637602*^9, 3.6845007147649717`*^9}}]
 }, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Import", "::", "nffil"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"File not found during \
+\[NoBreak]\\!\\(\\*RowBox[{\\\"Import\\\"}]\\)\[NoBreak]. \\!\\(\\*ButtonBox[\
+\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/Import/nffil\\\", ButtonNote -> \
+\\\"Import::nffil\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.684500649255712*^9, 3.684500705498684*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Part", "::", "partd"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Part specification \
+\[NoBreak]\\!\\(\\*RowBox[{\\\"$Failed\\\", \\\"\[LeftDoubleBracket]\\\", \
+\\\"1\\\", \\\"\[RightDoubleBracket]\\\"}]\\)\[NoBreak] is longer than depth \
+of object. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\
+\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/partd\\\", ButtonNote -> \
+\\\"Part::partd\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.684500649255712*^9, 3.684500705549011*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Part", "::", "partd"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Part specification \
+\[NoBreak]\\!\\(\\*RowBox[{\\\"$Failed\\\", \\\"\[LeftDoubleBracket]\\\", \
+\\\"2\\\", \\\"\[RightDoubleBracket]\\\"}]\\)\[NoBreak] is longer than depth \
+of object. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\
+\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/partd\\\", ButtonNote -> \
+\\\"Part::partd\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.684500649255712*^9, 3.68450070558206*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Transpose", "::", "nmtx"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The first two levels of \[NoBreak]\\!\\(\\*RowBox[{\\\"{\\\
+\", RowBox[{RowBox[{\\\"$Failed\\\", \\\"\[LeftDoubleBracket]\\\", \\\"1\\\", \
+\\\"\[RightDoubleBracket]\\\"}], \\\",\\\", RowBox[{\\\"$Failed\\\", \\\"\
+\[LeftDoubleBracket]\\\", \\\"2\\\", \\\"\[RightDoubleBracket]\\\"}]}], \\\"}\
+\\\"}]\\)\[NoBreak] cannot be transposed. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/Transpose/nmtx\\\", ButtonNote -> \
+\\\"Transpose::nmtx\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.684500649255712*^9, 3.6845007056155024`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Interpolation", "::", "innd"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"First argument in \[NoBreak]\\!\\(\\*RowBox[{\\\"Transpose\
+\\\", \\\"[\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"$Failed\\\", \\\"\
+\[LeftDoubleBracket]\\\", \\\"1\\\", \\\"\[RightDoubleBracket]\\\"}], \\\",\\\
+\", RowBox[{\\\"$Failed\\\", \\\"\[LeftDoubleBracket]\\\", \\\"2\\\", \\\"\
+\[RightDoubleBracket]\\\"}]}], \\\"}\\\"}], \\\"]\\\"}]\\)\[NoBreak] does not \
+contain a list of data and coordinates. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/Interpolation/innd\\\", ButtonNote -> \
+\\\"Interpolation::innd\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.684500649255712*^9, 3.6845007056311493`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Part", "::", "partd"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Part specification \
+\[NoBreak]\\!\\(\\*RowBox[{\\\"$Failed\\\", \\\"\[LeftDoubleBracket]\\\", \
+\\\"1\\\", \\\"\[RightDoubleBracket]\\\"}]\\)\[NoBreak] is longer than depth \
+of object. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\
+\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/partd\\\", ButtonNote -> \
+\\\"Part::partd\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.684500649255712*^9, 3.684500705668552*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Part", "::", "partd"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Part specification \
+\[NoBreak]\\!\\(\\*RowBox[{\\\"$Failed\\\", \\\"\[LeftDoubleBracket]\\\", \
+\\\"3\\\", \\\"\[RightDoubleBracket]\\\"}]\\)\[NoBreak] is longer than depth \
+of object. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\
+\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/partd\\\", ButtonNote -> \
+\\\"Part::partd\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.684500649255712*^9, 3.684500705712298*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Transpose", "::", "nmtx"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The first two levels of \[NoBreak]\\!\\(\\*RowBox[{\\\"{\\\
+\", RowBox[{RowBox[{\\\"$Failed\\\", \\\"\[LeftDoubleBracket]\\\", \\\"1\\\", \
+\\\"\[RightDoubleBracket]\\\"}], \\\",\\\", RowBox[{\\\"$Failed\\\", \\\"\
+\[LeftDoubleBracket]\\\", \\\"3\\\", \\\"\[RightDoubleBracket]\\\"}]}], \\\"}\
+\\\"}]\\)\[NoBreak] cannot be transposed. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/Transpose/nmtx\\\", ButtonNote -> \
+\\\"Transpose::nmtx\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.684500649255712*^9, 3.684500705733933*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Interpolation", "::", "innd"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"First argument in \[NoBreak]\\!\\(\\*RowBox[{\\\"Transpose\
+\\\", \\\"[\\\", RowBox[{\\\"{\\\", RowBox[{RowBox[{\\\"$Failed\\\", \\\"\
+\[LeftDoubleBracket]\\\", \\\"1\\\", \\\"\[RightDoubleBracket]\\\"}], \\\",\\\
+\", RowBox[{\\\"$Failed\\\", \\\"\[LeftDoubleBracket]\\\", \\\"3\\\", \\\"\
+\[RightDoubleBracket]\\\"}]}], \\\"}\\\"}], \\\"]\\\"}]\\)\[NoBreak] does not \
+contain a list of data and coordinates. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/Interpolation/innd\\\", ButtonNote -> \
+\\\"Interpolation::innd\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.684500649255712*^9, 3.684500705765902*^9}],
 
 Cell[CellGroupData[{
 
@@ -41112,7 +41231,7 @@ ti315Bcl6+6BaTmR3+eo6VsU+tuLk4WF/vrlT9zM5/8f+r78FD/9iSf1v9Kq
 },
 WindowToolbars->{},
 WindowSize->{1397, 855},
-WindowMargins->{{342, Automatic}, {Automatic, 220}},
+WindowMargins->{{538, Automatic}, {Automatic, 136}},
 FrontEndVersion->"10.4 for Mac OS X x86 (32-bit, 64-bit Kernel) (February 25, \
 2016)",
 StyleDefinitions->"Default.nb"
@@ -41133,105 +41252,112 @@ Cell[579, 22, 193, 2, 30, "Text",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
 Cell[775, 26, 5433, 157, 729, "Input",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}]
-}, Closed]],
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[6245, 188, 245, 5, 27, "Text",
+Cell[6245, 188, 245, 5, 30, "Text",
  CellGroupingRules->{"GroupTogetherGrouping", 10001.}],
-Cell[6493, 195, 124654, 2604, 5405, "Input",
+Cell[6493, 195, 124703, 2605, 5409, "Input",
  CellGroupingRules->{"GroupTogetherGrouping", 10001.}]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[131184, 2804, 279, 6, 30, "Text",
+Cell[131233, 2805, 279, 6, 30, "Text",
  CellGroupingRules->{"GroupTogetherGrouping", 10002.}],
-Cell[131466, 2812, 526, 10, 28, "Input",
- CellGroupingRules->{"GroupTogetherGrouping", 10002.}],
-Cell[131995, 2824, 856, 13, 28, "Output",
+Cell[131515, 2813, 574, 12, 28, "Input",
  CellGroupingRules->{"GroupTogetherGrouping", 10002.}]
-}, Closed]],
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[132888, 2842, 271, 6, 27, "Text",
+Cell[132126, 2830, 271, 6, 30, "Text",
  CellGroupingRules->{"GroupTogetherGrouping", 10003.}],
-Cell[133162, 2850, 1637, 28, 97, "Input",
+Cell[132400, 2838, 1637, 28, 97, "Input",
  CellGroupingRules->{"GroupTogetherGrouping", 10003.}]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[134836, 2883, 290, 6, 30, "Text",
+Cell[134074, 2871, 290, 6, 30, "Text",
  CellGroupingRules->{"GroupTogetherGrouping", 10004.}],
-Cell[135129, 2891, 33143, 709, 845, "Input",
+Cell[134367, 2879, 33143, 709, 845, "Input",
  CellGroupingRules->{"GroupTogetherGrouping", 10004.}]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[168309, 3605, 365, 7, 30, "Text",
+Cell[167547, 3593, 365, 7, 30, "Text",
  CellGroupingRules->{"GroupTogetherGrouping", 10005.}],
-Cell[168677, 3614, 1319, 29, 80, "Input",
+Cell[167915, 3602, 1319, 29, 80, "Input",
  CellGroupingRules->{"GroupTogetherGrouping", 10005.}]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[170033, 3648, 277, 5, 30, "Text",
+Cell[169271, 3636, 277, 5, 30, "Text",
  CellGroupingRules->{"GroupTogetherGrouping", 10006.}],
-Cell[170313, 3655, 27229, 646, 1193, "Input",
+Cell[169551, 3643, 27233, 647, 1193, "Input",
  CellGroupingRules->{"GroupTogetherGrouping", 10006.}]
 }, Open  ]],
+Cell[196799, 4293, 483, 10, 24, "Message"],
+Cell[197285, 4305, 585, 12, 24, "Message"],
+Cell[197873, 4319, 584, 12, 24, "Message"],
+Cell[198460, 4333, 745, 13, 24, "Message"],
+Cell[199208, 4348, 831, 14, 24, "Message"],
+Cell[200042, 4364, 585, 12, 24, "Message"],
+Cell[200630, 4378, 585, 12, 24, "Message"],
+Cell[201218, 4392, 743, 13, 24, "Message"],
+Cell[201964, 4407, 829, 14, 24, "Message"],
 Cell[CellGroupData[{
-Cell[197579, 4306, 433, 15, 34, "Text",
+Cell[202818, 4425, 433, 15, 34, "Text",
  CellGroupingRules->{"GroupTogetherGrouping", 10007.}],
-Cell[198015, 4323, 4431, 132, 363, "Input",
+Cell[203254, 4442, 4431, 132, 363, "Input",
  CellGroupingRules->{"GroupTogetherGrouping", 10007.}],
-Cell[202449, 4457, 85700, 1418, 681, "Output",
+Cell[207688, 4576, 85700, 1418, 681, "Output",
  CellGroupingRules->{"GroupTogetherGrouping", 10007.}]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[288186, 5880, 213, 4, 30, "Text",
+Cell[293425, 5999, 213, 4, 30, "Text",
  CellGroupingRules->{"GroupTogetherGrouping", 10008.}],
-Cell[288402, 5886, 22265, 588, 1108, "Input",
+Cell[293641, 6005, 22265, 588, 1108, "Input",
  CellGroupingRules->{"GroupTogetherGrouping", 10008.}],
-Cell[310670, 6476, 411866, 6537, 597, "Output",
+Cell[315909, 6595, 411866, 6537, 597, "Output",
  CellGroupingRules->{"GroupTogetherGrouping", 10008.}]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[722573, 13018, 6357, 167, 382, "Input"],
-Cell[728933, 13187, 55030, 806, 517, "Output"]
+Cell[727812, 13137, 6357, 167, 382, "Input"],
+Cell[734172, 13306, 55030, 806, 517, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[784000, 13998, 581, 17, 32, "Text",
+Cell[789239, 14117, 581, 17, 32, "Text",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
-Cell[784584, 14017, 19521, 414, 723, "Input",
+Cell[789823, 14136, 19521, 414, 723, "Input",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
-Cell[804108, 14433, 9738, 242, 339, "Input",
+Cell[809347, 14552, 9738, 242, 339, "Input",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
-Cell[813849, 14677, 11465, 218, 571, "Output",
+Cell[819088, 14796, 11465, 218, 571, "Output",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[825351, 14900, 454, 12, 33, "Text",
+Cell[830590, 15019, 454, 12, 33, "Text",
  CellGroupingRules->{"GroupTogetherGrouping", 10001.}],
-Cell[825808, 14914, 19626, 508, 798, "Input",
+Cell[831047, 15033, 19626, 508, 798, "Input",
  CellGroupingRules->{"GroupTogetherGrouping", 10001.}],
-Cell[845437, 15424, 37660, 669, 681, "Output",
+Cell[850676, 15543, 37660, 669, 681, "Output",
  CellGroupingRules->{"GroupTogetherGrouping", 10001.}]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[883134, 16098, 485, 12, 32, "Text",
+Cell[888373, 16217, 485, 12, 32, "Text",
  CellGroupingRules->{"GroupTogetherGrouping", 10002.}],
-Cell[883622, 16112, 11260, 286, 459, "Input",
+Cell[888861, 16231, 11260, 286, 459, "Input",
  CellGroupingRules->{"GroupTogetherGrouping", 10002.}],
-Cell[894885, 16400, 175405, 2919, 317, "Output",
+Cell[900124, 16519, 175405, 2919, 317, "Output",
  CellGroupingRules->{"GroupTogetherGrouping", 10002.}]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1070327, 19324, 234, 3, 30, "Text",
+Cell[1075566, 19443, 234, 3, 30, "Text",
  CellGroupingRules->{"GroupTogetherGrouping", 10003.}],
-Cell[1070564, 19329, 8845, 219, 367, "Input",
+Cell[1075803, 19448, 8845, 219, 367, "Input",
  CellGroupingRules->{"GroupTogetherGrouping", 10003.}],
-Cell[1079412, 19550, 66221, 1246, 517, "Output",
+Cell[1084651, 19669, 66221, 1246, 517, "Output",
  CellGroupingRules->{"GroupTogetherGrouping", 10003.}]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[1145670, 20801, 316, 9, 32, "Text",
+Cell[1150909, 20920, 316, 9, 32, "Text",
  CellGroupingRules->{"GroupTogetherGrouping", 10004.}],
-Cell[1145989, 20812, 15227, 374, 464, "Input",
+Cell[1151228, 20931, 15227, 374, 464, "Input",
  CellGroupingRules->{"GroupTogetherGrouping", 10004.}],
-Cell[1161219, 21188, 1138398, 19921, 417, "Output",
+Cell[1166458, 21307, 1138398, 19921, 417, "Output",
  CellGroupingRules->{"GroupTogetherGrouping", 10004.}]
 }, Open  ]]
 }
